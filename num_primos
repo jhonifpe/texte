@@ -1,0 +1,22 @@
+var n= 1;
+var divisor= 0;
+var cont= 0;
+
+if(n>1){
+while(cont<=n){
+    if(n%cont==0){
+        divisor++
+    }
+cont++
+}
+
+if(divisor>=3){
+    console.log(n+" não é primo");
+}
+else{
+    console.log(n+" é primo");
+}
+}
+else{
+    console.log("este numero não é maior que um, logo ele não pode ser primo")
+}

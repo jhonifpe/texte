@@ -1,0 +1,21 @@
+function elevar(a,b) {           // Nome da função = elevar que recebe 'a' e 'b'
+
+    let soma=a;                  // variavel soma que recebe o valor de a
+
+    if (b>0){                    // se o expoente for maior que zero ou seja positivo
+        for(n=1;n<b;n++){        // enquanto n for menor que o expoente 'b', o num vai multiplicar a qtd de vezes de b 
+           soma= soma*a          // exemplo 5^2 = soma= 5x5=25 
+        }
+        return soma              // vai mostrar o valor da operação soma   
+    }
+    else {                       // caso o numero seja menor que zero ou seja negativo
+        res=0;                   // definição de uma variavel res que vai servir depois pra fazer a operação
+        b=b*(-1)                 // b=-2*-1 = b=2 o valor de b que é neg muda para positivo
+        for(n=1;n<b;n++){
+            soma=soma*a
+        }
+        res= 1/soma              // aqui a variavel res faz 1 dividido pelo resultado do numero elevado ao outro
+        return res               // vai mostrar o valor da operação res
+    }
+}
+    console.log("o resultado é " + elevar(5,3));
